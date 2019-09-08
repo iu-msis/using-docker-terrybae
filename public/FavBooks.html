@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+  <title>Favorite Books</title>
+  <!--Compiled and minified CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container-fluid">
+    <header class="row">
+        <div class="col-xs-10 col-sm-10 col-md-11 col-lg-11">
+            <h1 id="About Me">My Homepage</h1>
+        </div>
+    </header>
+  </div>
+
+<nav class="navbar navbar-default">
+  <ul class="nav nav-pills nav-fill">
+    <li class="nav-item">
+      <a class="nav-link active" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Information.html">About Me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="FavBooks.html">Favorite Books</a>
+    </li>
+  </ul>
+</nav>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Year Published</th>
+      <th scope="col">Publisher</th>
+      <th scope="col">Pages</th>
+      <th scope="col">MSRP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">The Flight Girls</th>
+      <td scope="row">Noelle Salazar</td>
+      <td scope="row">2019</td>
+      <td scope="row">MIRA</td>
+      <td scope="row">384</td>
+      <td scope="row">$19.60</td>
+    </tr>
+    <tr>
+      <th scope="row">The old man and the sea</th>
+      <td scope="row">Ernest Hemingway</td>
+      <td scope="row">1952</td>
+      <td scope="row">Scriber; Reissue Edition</td>
+      <td scope="row">127</td>
+      <td scope="row">$10.39</td>
+    </tr>
+    <tr>
+      <th scope="row">Of Mice and Men</th>
+      <td scope="row">John Steinbeck</td>
+      <td scope="row">1937</td>
+      <td scope="row">Penguin Books</td>
+      <td scope="row">107</td>
+      <td scope="row">$9.79</td>
+    </tr>
+    <tr>
+      <th scope="row">Lord of the Flies</th>
+      <td scope="row">William Golding</td>
+      <td scope="row">1954</td>
+      <td scope="row">Penguin Books</td>
+      <td scope="row">224</td>
+      <td scope="row">$5.99</td>
+    </tr>
+  </tbody>
+</table>
+
+<form>
+  <div class="form-group">
+    <label for="exampleInputTitle">Title: </label>
+    <input type="text" class="form-control" id="exampleInputTitle" aria-describedby="titleHelp" placeholder="Enter Title">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputAuthor">Author: </label>
+    <input type="text" class="form-control" id="exampleInputAuthor" aria-describedby="AuthorHelp" placeholder="Enter Author">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPublished">Year Published: </label>
+    <input type="text" class="form-control" id="exampleInputPublished" aria-describedby="PublishedHelp" placeholder="Enter Published">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPublisher">Publisher: </label>
+    <input type="text" class="form-control" id="exampleInputPUblisher" aria-describedby="PublisherHelp" placeholder="Enter Publisher">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPages">Pages: </label>
+    <input type="text" class="form-control" id="exampleInputPages" aria-describedby="PagesHelp" placeholder="Enter Pages">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputMSRP">MSRP</label>
+    <input type="text" class="form-control" id="exampleInputMSRP" aria-describedby="MSRPHelp" placeholder="Enter MSRP">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+
+</body>
+</html>

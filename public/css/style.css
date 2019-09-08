@@ -1,0 +1,75 @@
+header{
+  background:rgb(122,23,5);
+  color:white;
+  font-family:"Roman",serif;
+}
+
+body{
+  background-color:rgb(211,211,211);
+}
+
+h2 {
+    margin-left: 18px;
+    font-size: 23px;
+    margin-bottom: 8px;
+    color: blue;
+}
+
+p {
+  color:rgb(255, 50, 150);
+    padding-left: 8px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:link {
+  color: purple;
+}
+
+form {
+    font-family: sans-serif;
+}
+
+.square{
+  width: 15%;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+
+.welcome{
+  width:50%
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+#exampleInputMSRP{
+  text-align: center;
+}
+
+#exampleInputPages{
+  text-align: center;
+}
+
+#exampleInputTitle{
+  text-align: center;
+}
+
+#exampleInputAuthor{
+  text-align: center;
+}
+
+#exampleInputPUblisher{
+  text-align: center;
+}
+
+#exampleInputPublished{
+  text-align: center;
+}
