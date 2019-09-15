@@ -30,31 +30,41 @@
     </li>
   </ul>
 </nav>
-<div class="content_block">
-<a target="_blank" href="https://randomuser.me/api/portraits/men/25.jpg">
-  <img  class="square" src="https://randomuser.me/api/portraits/men/25.jpg" alt= "Jason Clarke" title="Jason Clarke img from randomuser.me">
-  </a>
-  <P >Source: https://randomuser.me/api/portraits/men/25.jpg</P>
 
-<table class="table">
+
+<div class="picture" id="user">
+<a v-bind:href:"user.picture.large">
+  <img  class="square" v-bind:src="user.picture.medium" id="randomPicture">
+  </a>
+  <p>picture from randomuser.me</p>
+</div>
+
+<div>
+<table class="table" id="user">
   <thead class="thead-dark">
     <tr>
       <th scope="col">Name</th>
-      <th scope="col">Country</th>
+      <th scope="col">State</th>
       <th scope="col">Birth Date</th>
+      <th scope="col">Age</th>
       <th scope="col">Email</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th scope="row">Jason Clarke</th>
-      <td scope="row">United States of America</td>
-      <td scope="row">1991/04/22</td>
-      <td scope="row"><a href="mailto:Jason.Cl@gmail.com">Jason.Cl@gmail.com</a></td>
+      <th scope="row">{{user.name.first}}{{user.name.last}}</th>
+      <td scope="row">{{user.location.country}}</td>
+      <td scope="row">{{user.dob.date}}</td>
+      <td scope="row">{{user.dob.age}}</td>
+      <td scope="row"><a href="{{user.email}}">{{user.email}}</a></td>
     </tr>
   </tbody>
 </table>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="js/profile.js"></script>
+
 <br>
 <br>
 <a target="_blank" href="img/Tom.jpg">
@@ -65,6 +75,7 @@
 
 
   <center> This is my cat 'TOM' and he is 6 years old</center>
+
 
 
 </body>
