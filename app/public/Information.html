@@ -33,11 +33,10 @@
 
 
 <div class="picture" id="user">
-<a v-bind:href:"user.picture.large">
-  <img  class="square" v-bind:src="user.picture.medium" id="randomPicture">
-  </a>
+<center><a v-bind:href="user.picture.large">
+  <img  class="pictureThumbnail" v-bind:src="user.picture.medium" id="randomPicture">
+</a></center>
   <p>picture from randomuser.me</p>
-</div>
 
 <div>
 <table class="table" id="user">
@@ -53,7 +52,7 @@
   <tbody>
     <tr>
       <th scope="row">{{user.name.first}}{{user.name.last}}</th>
-      <td scope="row">{{user.location.country}}</td>
+      <td scope="row">{{user.location.state}}</td>
       <td scope="row">{{user.dob.date}}</td>
       <td scope="row">{{user.dob.age}}</td>
       <td scope="row"><a href="{{user.email}}">{{user.email}}</a></td>
@@ -61,6 +60,8 @@
   </tbody>
 </table>
 </div>
+</div>
+
 
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="js/profile.js"></script>
