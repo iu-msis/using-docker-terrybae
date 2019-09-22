@@ -12,6 +12,9 @@ var waitingProfile = new Vue({
   },
 
 
+  handleSubmit(event) {
+
+  },
 
   created() {
     this.fetchUser()
